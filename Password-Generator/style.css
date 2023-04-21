@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c3cbdc;
+background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+    color: rgb(252, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bitter', serif;
+    margin: 0;
+    min-height: 100dvh;
+}
+
+.pw-container {
+    background-color: #2d3436;
+    min-width: 400px;
+    border-radius: 5px;
+}
+
+.pw-header {
+    padding: 1rem;
+    
+}
+
+.pw {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #2c2626 50%);    display: flex;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button {
+    background-color: #f7f6f6;
+    border: none;
+    color: rgb(12, 7, 7);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    position: absolute;
+    top: 1;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    color:#f7ecec;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generate {
+    background-color: #5f56e7;
+    border: none;
+    border-radius: 5px;
+    color: rgb(254, 254, 255);
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+}
