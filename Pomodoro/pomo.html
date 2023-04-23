@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+        
+        <h1 id="head">Pomodoro</h1>
+        <div class="btncontainer">
+    <button class="btn" id="pomo">Pomodoro</button>
+    <button class="btn" id="sBreak">Short Break</button>
+    <button class="btn"id="lBreak">Long Break</button>
+    </div>
+    <div class="circle">
+    <div class="minicircle">
+        <div class="timerContainer">
+            <div class="timer">00:00</div>
+        </div>
+        <button class="start">Start</button>
+    </div>
+</div>
+    
+    <button class="setting">
+        <i class="fa-solid fa-gear"></i>
+    </button>
+    <div class="setContainer">
+        <label for="input" class="set">Set Time:</label>
+        <input type="number" id="timeEl" min="1" max="99"><br>
+        <label for="input" class="set">Short Break:</label>
+        <input type="number" id="sBreakEl" min="1" max="99"><br>
+        <label for="input" class="set">Long Break:</label>
+        <input type="number" id="lBreakEl" min="1" max="99"><br>
+        <button class="submit">Set</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
