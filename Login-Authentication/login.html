@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend id="head">SIGN UP</legend>
+            <div class="user">
+                <label class="fName">UserName:</label>
+                <input type="text" id="username" minlength="5" maxlength="20">
+            </div>
+            <div class="pw">
+                <label for="Password" class="pHolder">Password:</label>
+                <input type="password" id="password" minlength="8" maxlength="30" size="20">
+            </div>
+        
+            <div class="btn">
+                <button class="submit">Login</button>
+            </div>
+    </fieldset>
+    </div>
+    <div class="rules-container">
+        <label class="head">Password Rules:</label>
+        <label><span class="checkmark" id="r1"></span> Use at least 12 characters</label>
+        <label><span class="checkmark" id="r2"></span> A mixture of both uppercase and lowercase letters</label>
+        <label><span class="checkmark" id="r3"></span> A mixture of letters and numbers </label>
+        <label><span class="checkmark" id="r4"></span> Inclusion of at least one special character, e.g., ! @ # ? ]</label>
+    </div>
+    <img class="meme" src="wait-a-minute-who-are-you.gif" alt="meme">
+
+    <script src="script.js"></script>
+</body>
+</html>
