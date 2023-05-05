@@ -22,25 +22,25 @@ function rules() {
     if(passLen.length >= 12){
         rule1.style = `background-color: green;`;
     } else {
-        rule1.style = `background-color: rgb(177, 66, 66);`;
+        rule1.style = `background-color: #8693AB;`;
     }
 
     if(upperLower.test(passLen)){
         rule2.style = `background-color: green;`;
     } else{
-        rule2.style = `background-color: rgb(177, 66, 66);`;
+        rule2.style = `background-color: #8693AB;`;
     }
 
     if(letterNumber.test(passLen)){
         rule3.style = `background-color: green;`;
     } else{
-        rule3.style = `background-color: rgb(177, 66, 66);`;
+        rule3.style = `background-color: #8693AB;`;
     }
 
     if(specialCharacter.test(passLen)){
         rule4.style = `background-color: green;`;
     } else{
-        rule4.style = `background-color: rgb(177, 66, 66);`;
+        rule4.style = `background-color: #8693AB;`;
     }
 
     if(!(passLen.length >= 12) || !upperLower.test(passLen) || !letterNumber.test(passLen) || !specialCharacter.test(passLen)){
